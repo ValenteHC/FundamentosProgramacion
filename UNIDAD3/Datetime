@@ -1,0 +1,169 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMxOule7Fz6jjFrzVodCkXp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ValenteHC/FundamentosProgramacion/blob/main/UNIDAD3/Datetime\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 36,
+      "metadata": {
+        "id": "TbZxc--3GIxW"
+      },
+      "outputs": [],
+      "source": [
+        "import datetime"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ahora = datetime.datetime.now()\n",
+        "print(ahora)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mTN9BmgeGhPU",
+        "outputId": "390dbcfd-2a42-4497-9b03-e33f04b44ec3"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2026-10-29 19:20:21.935747\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mi_ahora = datetime.time (14,30, 0) #Hora, Minuto, Segundo\n",
+        "print(mi_ahora)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ltz9M--JG1wT",
+        "outputId": "906352ac-0d2e-4f04-ab3c-6164cb24d5b3"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "14:30:00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Operaciones con fechas\n",
+        "hoy = datetime.date.today()\n",
+        "dias_mas_10 = hoy + datetime.timedelta(days=10)\n",
+        "print(\"Hoy: \",hoy)\n",
+        "print(\"Fecha dentro de 10 dias:\", dias_mas_10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wxgxdPPDHZPq",
+        "outputId": "e889717a-fe97-44ba-f972-4de4770c95a4"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hoy:  2026-10-29\n",
+            "Fecha dentro de 10 dias: 2026-11-08\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datetime import datetime\n",
+        "ahora= datetime.now()\n",
+        "print(ahora)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yLhQbVb-IH-z",
+        "outputId": "14e77c79-673f-4d8f-e223-2600e01433f2"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2026-10-29 19:29:00.848866\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#   Usar un alias para dar un nombre mas corto\n",
+        "import datetime as dt\n",
+        "\n",
+        "ahora = dt.datetime.now()\n",
+        "print(ahora)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-VmnrshkIzJZ",
+        "outputId": "8b2b2262-fb0b-4594-858f-25addf11ab59"
+      },
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2026-10-29 19:30:19.816585\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
